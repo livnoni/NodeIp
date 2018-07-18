@@ -1,7 +1,7 @@
 {
-  "name": "ipnode",
+  "name": "nodeip",
   "version": "1.0.0",
-  "description": "node server for ip's requsts",
+  "description": "node server for ip's requests",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
