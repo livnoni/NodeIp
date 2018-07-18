@@ -23,6 +23,8 @@ The REST API to the node ip app is described below.
 
 ### Request
 
+[https://nodeip.herokuapp.com/prev](https://nodeip.herokuapp.com/prev)
+
 `GET /prev/`
 
     curl -i -H 'Accept: application/json' https://nodeip.herokuapp.com/prev
@@ -41,6 +43,8 @@ The REST API to the node ip app is described below.
 ## Will return the total number of /prev requests served so far
 
 ### Request
+
+[https://nodeip.herokuapp.com/total](https://nodeip.herokuapp.com/total)
 
 `GET /total/`
 
@@ -61,9 +65,11 @@ The REST API to the node ip app is described below.
 
 ### Request
 
+[https://nodeip.herokuapp.com/stats](https://nodeip.herokuapp.com/stats)
+
 `GET /stats/`
 
-    curl -i -H 'Accept: application/json' https://nodeip.herokuapp.com/total
+    curl -i -H 'Accept: application/json' https://nodeip.herokuapp.com/stats
 
 ### Response
     HTTP/1.1 200 OK
