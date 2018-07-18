@@ -3,7 +3,7 @@
 
 
 
-##### The node server deployed, You can use it [Here](https://nodeip.herokuapp.com), Or you can clone it and to run on your local machine.
+##### The node server deployed, You can use it [Here](https://nodeip.herokuapp.com), Or you can [clone](https://github.com/livnoni/NodeIp.git) it and run on your local machine.
 
 ## Install
 
