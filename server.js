@@ -7,11 +7,10 @@ var clientsData = [];
 
 app.get('/prev', async function (req, res) {
     console.log("got /prev GET request.");
-    prevCounter++;
+    prevCounter ++;
     var ip = req.header('x-forwarded-for') || req.connection.remoteAddress;
     clientsData.push({ip:ip, time: new Date()});
 
-    res.end(`this is the ${++counter} time you log in...`);
     if(clientsData.length == 0){
         res.end(`You (${clientsData[0].ip}) are the first client that connected, no prev client`);
     }else{
@@ -24,9 +23,15 @@ app.get('/total', async function (req, res) {
     res.end(`There were total ${prevCounter} of /prev requests served so far.`);
 });
 
-app.get('/stats ', async function (req, res) {
+app.get('/stats', async function (req, res) {
     console.log("got /stats GET request.");
-    res.end(`stats = \n${JSON.stringify(clientsData)}`);
+
+    if(clientsData.length == 0){
+        res.end(`We can not display statistics because there are no clients data.`);
+    }else{
+        res.end(`stats = \n${JSON.stringify(clientsData)}`);
+    }
+
 });
 
 
